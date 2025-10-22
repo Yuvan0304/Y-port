@@ -90,6 +90,27 @@
         transform: scale(0.8) translateY(-20px);
       }
     }
+
+    /* UNIQUE text in scene2 */
+    .scene2UniqueText {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+      pointer-events: none;
+    }
+
+    .scene2UniqueText span {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      font-size: 120px;
+      text-transform: uppercase;
+      color: #fff;
+      mix-blend-mode: difference;
+      opacity: 0.8;
+      letter-spacing: 0.1em;
+    }
   </style>
 </head>
 <body>
@@ -508,7 +529,7 @@
 </div>
 </div>
 </div>
-<div class="scene2"><div id="threeText"></div></div>
+<div class="scene2"><div id="threeText"></div><div class="scene2UniqueText"><span>UNIQUE</span></div></div>
 <div class="chapter3">
 <div class="chapter3Pop">
 <div class="chapter3PopEdges">
