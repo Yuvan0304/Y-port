@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="css/css2.css" rel="stylesheet"/>
+<link href="css/lenis.css" rel="stylesheet"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="public, max-age=31536000" http-equiv="Cache-Control"/>
+<meta content="Ysr | Luxurious &amp; Tech" name="description"/>
+<meta content="Ysr, website, design, creative, luxury, modern, desinger, studio, site, web" name="Keywords"/>
+<meta content="Amir Arhami" name="author"/>
+<meta content="images/f1.webp" property="og:image"/>
+<meta content="Ysr" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="https://Ysr.com" property="og:url"/>
+<meta content="Ysr | Luxurious &amp; Tech" property="og:description"/>
+<meta content="Ysr" itemprop="name"/>
+<meta content="Ysr | Luxurious &amp; Tech" itemprop="description"/>
+<meta content="image/f1.png" itemprop="image"/>
+<meta content="#000000" name="theme-color"/>
+<meta content="#000000" name="msapplication-navbutton-color"/>
+<meta content="#000000" name="apple-mobile-web-app-status-bar-style"/>
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="#000000" name="apple-mobile-web-app-status-barstyle"/>
+<meta content="yes" name="mobile-web-app-capable"/>
+<meta content="Ysr" name="apple-mobile-web-app-title"/>
+<meta content="Ysr" name="application-name"/>
+<meta content="#000000" name="msapplication-TileColor"/>
+<meta content="public/pics/fav128.png" name="msapplication-TileImage"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link href="images/f2.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="images/f2.png" rel="icon" sizes="192x192" type="image/webp"/>
+<link href="images/f1.png" rel="icon" sizes="32x32" type="image/webp"/>
+<link href="images/s1.png" rel="icon" sizes="16x16" type="image/webp"/>
+<link href="images/f2.png" rel="apple-touch-icon"/>
+<link href="images/f2.png" rel="shortcut icon" sizes="192x192"/>
+<title>Ysr | Luxurious &amp; Tech</title>
+<script crossorigin="" src="js/index-CM4fW6ok.js" type="module"></script>
+<link crossorigin="" href="css/index-BBfXnbkO.css" rel="stylesheet"/>
+<style>
+    body {
+      margin: 0;
+      height: 200vh; /* scrollable page */
+      background: #000;
+      overflow-x: hidden;
+      cursor: default; /* ✅ show normal arrow */
+    }
+    
+
+    .particle {
+      position: fixed;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      pointer-events: none;
+      background: radial-gradient(circle, rgba(255,255,0,0.6) 20%, rgba(255,165,0,0.4) 50%, rgba(255,0,0,0.3) 80%, transparent 100%);
+      filter: blur(3px);
+      animation: flame-fade 0.6s forwards;
+    }
+
+    @keyframes flame-fade {
+      from {
+        opacity: 0.6;
+        transform: scale(1);
+      }
+      to {
+        opacity: 0;
+        transform: scale(0.3) translateY(-30px);
+      }
+    }
+
+    /* Big flame particle */
+    ..big {
+  width: 40px;
+  height: 40px;
+  filter: blur(5px);
+  z-index: 6; /* slightly above sparks */
+  opacity: 0.4;
+} /* ✅ lighter so arrow stays visible */
+    }
+
+    @keyframes big-fade {
+      from {
+        opacity: 0.4;
+        transform: scale(1);
+      }
+      to {
+        opacity: 0.1;
+        transform: scale(0.8) translateY(-20px);
+      }
+    }
+  </style>
+</head>
+<body>
+<audio id="ambient" loop="" src="media/ambient-MtafovVv.webm"></audio>
+<audio id="sfxMenuHover" src="media/sfxMenuHover-AlK6r7Hb.webm"></audio>
+<audio id="sfxTransition" src="media/sfxTransition-Bk1CIz3j.webm"></audio>
+<audio id="sfxContact" src="media/sfxContact-LT9S7DqH.webm"></audio>
+<audio id="tick" src="media/tickOne-PcPg-xyd.webm"></audio>
+<div class="loading">
+<div class="loadingChars">
+<div class="loadingCharsItem">
+<span>L</span>
+</div>
+<div class="loadingCharsItem">
+<span>o</span>
+</div>
+<div class="loadingCharsItem">
+<span>a</span>
+</div>
+<div class="loadingCharsItem">
+<span>d</span>
+</div>
+<div class="loadingCharsItem">
+<span>i</span>
+</div>
+<div class="loadingCharsItem">
+<span>n</span>
+</div>
+<div class="loadingCharsItem">
+<span>g</span>
+</div>
+</div>
+</div>
+<div class="introLogo">
+<img alt="f2" src="images/cropped_circle_image.png" title="Ysr"/>
+</div>
+<div id="intro">
+<!-- <canvas id="introCan"></canvas> -->
+<spline-viewer url="https://prod.spline.design/7awpMo5U0HCE7IZl/scene.splinecode"></spline-viewer>
+<!-- <hana-viewer url="https://prod.spline.design/cGpHWJ5WX5YmzRmU-xjN/scene.hanacode"></hana-viewer> -->
+</div>
+<div id="clickOverlay">
+</div>
+<div class="introBack">
+<div class="introBackTop"></div>
+<div class="introBackBottom"></div>
+</div>
+<div class="cta">
+<div class="ctaCircle1"></div>
+<div class="ctaCircle2"></div>
+<div class="ctaLines">
+<div class="ctaLineR"></div>
+<div class="ctaLineL"></div>
+<div class="ctaLineT"></div>
+<div class="ctaLineB"></div>
+</div>
+<div class="ctaText">
+<div class="ctaTextHolder">
+<span>C</span>
+<span>l</span>
+<span>i</span>
+<span>c</span>
+<span>k</span>
+<span> </span>
+<span>a</span>
+<span>n</span>
+<span>y</span>
+<span>w</span>
+<span>h</span>
+<span>e</span>
+<span>r</span>
+<span>e</span>
+</div>
+</div>
+</div>
+<div class="introTypo" id="introTypo">
+<!-- <img src="image/f1.png" alt="f1" title="Ysr"> -->
+</div>
+<div class="menu">
+<div class="menuBtn1Hld">
+<div class="menuBtn1 sfxMenu">
+<div class="liquid-glass">
+<div class="liquid-glass--bend"></div>
+<div class="liquid-glass--face"></div>
+<div class="liquid-glass--edge"></div>
+</div>
+<div class="menuBtn1LT"></div>
+<div class="menuBtn1LL"></div>
+<div class="menuBtn1TXT">
+<div class="menuBtnText">
+<span>Projects</span>
+</div>
+<div class="menuBtnTextHover">
+<span>Projects</span>
+</div>
+</div>
+</div>
+</div>
+<div class="menuBtn2Hld">
+<div class="menuBtn2 sfxMenu">
+<div class="liquid-glass">
+<div class="liquid-glass--bend"></div>
+<div class="liquid-glass--face"></div>
+<div class="liquid-glass--edge"></div>
+</div>
+<div class="menuBtn2TXT">
+<div class="menuBtnText">
+<span>Contact</span>
+</div>
+<div class="menuBtnTextHover">
+<span>Contact</span>
+</div>
+</div>
+<div class="menuBtn2LT"></div>
+<div class="menuBtn2LR"></div>
+</div>
+</div>
+<div class="menuBtn3Hld">
+<div class="menuBtn3 sfxMenu">
+<div class="liquid-glass">
+<div class="liquid-glass--bend"></div>
+<div class="liquid-glass--face"></div>
+<div class="liquid-glass--edge"></div>
+</div>
+<div class="menuBtn3TXT">
+<div class="menuBtnText">
+<img alt="Mute Ambient" src="data:image/svg+xml,%3csvg%20width='20'%20height='18'%20viewBox='0%200%2020%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M10.5%2017.25C10.5%2017.4489%2010.4209%2017.6396%2010.2803%2017.7803C10.1396%2017.9209%209.94891%2018%209.75%2018C9.55109%2018%209.36038%2017.9209%209.21973%2017.7803C9.07907%2017.6396%209%2017.4489%209%2017.25V13.834L10.5%2012.334V17.25ZM13.5%2014.25C13.5%2014.4489%2013.4209%2014.6396%2013.2803%2014.7803C13.1396%2014.9209%2012.9489%2015%2012.75%2015C12.5511%2015%2012.3604%2014.9209%2012.2197%2014.7803C12.0791%2014.6396%2012%2014.4489%2012%2014.25V10.834L13.5%209.33398V14.25ZM6.75%203C6.94891%203%207.13962%203.07907%207.28027%203.21973C7.42093%203.36038%207.5%203.55109%207.5%203.75V12.5059L6%2014.0059V3.75C6%203.55109%206.07907%203.36038%206.21973%203.21973C6.36038%203.07907%206.55109%203%206.75%203ZM3.75%205.25C3.94891%205.25%204.13962%205.32907%204.28027%205.46973C4.42093%205.61038%204.5%205.80109%204.5%206V12C4.5%2012.1989%204.42093%2012.3896%204.28027%2012.5303C4.13962%2012.6709%203.94891%2012.75%203.75%2012.75C3.55109%2012.75%203.36038%2012.6709%203.21973%2012.5303C3.07907%2012.3896%203%2012.1989%203%2012V6C3%205.80109%203.07907%205.61038%203.21973%205.46973C3.36038%205.32907%203.55109%205.25%203.75%205.25ZM16.5%2012C16.5%2012.1989%2016.4209%2012.3896%2016.2803%2012.5303C16.1396%2012.6709%2015.9489%2012.75%2015.75%2012.75C15.5511%2012.75%2015.3604%2012.6709%2015.2197%2012.5303C15.0791%2012.3896%2015%2012.1989%2015%2012V7.83398L16.5%206.33398V12ZM0.75%206.75C0.948912%206.75%201.13962%206.82907%201.28027%206.96973C1.42093%207.11038%201.5%207.30109%201.5%207.5V10.5C1.5%2010.6989%201.42093%2010.8896%201.28027%2011.0303C1.13962%2011.1709%200.948912%2011.25%200.75%2011.25C0.551088%2011.25%200.360379%2011.1709%200.219727%2011.0303C0.0790745%2010.8896%200%2010.6989%200%2010.5V7.5C0%207.30109%200.0790743%207.11038%200.219727%206.96973C0.360379%206.82907%200.551088%206.75%200.75%206.75ZM18.75%206.75C18.9489%206.75%2019.1396%206.82907%2019.2803%206.96973C19.4209%207.11038%2019.5%207.30109%2019.5%207.5V10.5C19.5%2010.6989%2019.4209%2010.8896%2019.2803%2011.0303C19.1396%2011.1709%2018.9489%2011.25%2018.75%2011.25C18.5511%2011.25%2018.3604%2011.1709%2018.2197%2011.0303C18.0791%2010.8896%2018%2010.6989%2018%2010.5V7.5C18%207.30109%2018.0791%207.11038%2018.2197%206.96973C18.3604%206.82907%2018.5511%206.75%2018.75%206.75ZM9.75%200C9.94891%200%2010.1396%200.0790745%2010.2803%200.219727C10.4209%200.360379%2010.5%200.551088%2010.5%200.75V9.50586L9%2011.0059V0.75C9%200.551088%209.07907%200.360379%209.21973%200.219727C9.36038%200.0790745%209.55109%200%209.75%200ZM12.75%203C12.9489%203%2013.1396%203.07907%2013.2803%203.21973C13.4209%203.36038%2013.5%203.55109%2013.5%203.75V6.50586L12%208.00586V3.75C12%203.55109%2012.0791%203.36038%2012.2197%203.21973C12.3604%203.07907%2012.5511%203%2012.75%203Z'%20fill='white'/%3e%3cline%20x1='16.4919'%20y1='2.92789'%20x2='3.41421'%20y2='16.0003'%20stroke='white'%20stroke-width='2'%20stroke-linecap='round'/%3e%3c/svg%3e" title="Mute Ambient"/><span>Mute</span>
+</div>
+<div class="menuBtnTextHover">
+<img alt="Mute Ambient" src="data:image/svg+xml,%3csvg%20width='20'%20height='18'%20viewBox='0%200%2020%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M10.5%2017.25C10.5%2017.4489%2010.4209%2017.6396%2010.2803%2017.7803C10.1396%2017.9209%209.94891%2018%209.75%2018C9.55109%2018%209.36038%2017.9209%209.21973%2017.7803C9.07907%2017.6396%209%2017.4489%209%2017.25V13.834L10.5%2012.334V17.25ZM13.5%2014.25C13.5%2014.4489%2013.4209%2014.6396%2013.2803%2014.7803C13.1396%2014.9209%2012.9489%2015%2012.75%2015C12.5511%2015%2012.3604%2014.9209%2012.2197%2014.7803C12.0791%2014.6396%2012%2014.4489%2012%2014.25V10.834L13.5%209.33398V14.25ZM6.75%203C6.94891%203%207.13962%203.07907%207.28027%203.21973C7.42093%203.36038%207.5%203.55109%207.5%203.75V12.5059L6%2014.0059V3.75C6%203.55109%206.07907%203.36038%206.21973%203.21973C6.36038%203.07907%206.55109%203%206.75%203ZM3.75%205.25C3.94891%205.25%204.13962%205.32907%204.28027%205.46973C4.42093%205.61038%204.5%205.80109%204.5%206V12C4.5%2012.1989%204.42093%2012.3896%204.28027%2012.5303C4.13962%2012.6709%203.94891%2012.75%203.75%2012.75C3.55109%2012.75%203.36038%2012.6709%203.21973%2012.5303C3.07907%2012.3896%203%2012.1989%203%2012V6C3%205.80109%203.07907%205.61038%203.21973%205.46973C3.36038%205.32907%203.55109%205.25%203.75%205.25ZM16.5%2012C16.5%2012.1989%2016.4209%2012.3896%2016.2803%2012.5303C16.1396%2012.6709%2015.9489%2012.75%2015.75%2012.75C15.5511%2012.75%2015.3604%2012.6709%2015.2197%2012.5303C15.0791%2012.3896%2015%2012.1989%2015%2012V7.83398L16.5%206.33398V12ZM0.75%206.75C0.948912%206.75%201.13962%206.82907%201.28027%206.96973C1.42093%207.11038%201.5%207.30109%201.5%207.5V10.5C1.5%2010.6989%201.42093%2010.8896%201.28027%2011.0303C1.13962%2011.1709%200.948912%2011.25%200.75%2011.25C0.551088%2011.25%200.360379%2011.1709%200.219727%2011.0303C0.0790745%2010.8896%200%2010.6989%200%2010.5V7.5C0%207.30109%200.0790743%207.11038%200.219727%206.96973C0.360379%206.82907%200.551088%206.75%200.75%206.75ZM18.75%206.75C18.9489%206.75%2019.1396%206.82907%2019.2803%206.96973C19.4209%207.11038%2019.5%207.30109%2019.5%207.5V10.5C19.5%2010.6989%2019.4209%2010.8896%2019.2803%2011.0303C19.1396%2011.1709%2018.9489%2011.25%2018.75%2011.25C18.5511%2011.25%2018.3604%2011.1709%2018.2197%2011.0303C18.0791%2010.8896%2018%2010.6989%2018%2010.5V7.5C18%207.30109%2018.0791%207.11038%2018.2197%206.96973C18.3604%206.82907%2018.5511%206.75%2018.75%206.75ZM9.75%200C9.94891%200%2010.1396%200.0790745%2010.2803%200.219727C10.4209%200.360379%2010.5%200.551088%2010.5%200.75V9.50586L9%2011.0059V0.75C9%200.551088%209.07907%200.360379%209.21973%200.219727C9.36038%200.0790745%209.55109%200%209.75%200ZM12.75%203C12.9489%203%2013.1396%203.07907%2013.2803%203.21973C13.4209%203.36038%2013.5%203.55109%2013.5%203.75V6.50586L12%208.00586V3.75C12%203.55109%2012.0791%203.36038%2012.2197%203.21973C12.3604%203.07907%2012.5511%203%2012.75%203Z'%20fill='white'/%3e%3cline%20x1='16.4919'%20y1='2.92789'%20x2='3.41421'%20y2='16.0003'%20stroke='white'%20stroke-width='2'%20stroke-linecap='round'/%3e%3c/svg%3e" title="Mute Ambient"/><span>Mute</span>
+</div>
+</div>
+<div class="menuBtn3TXTAlt">
+<div class="menuBtnText">
+<img alt="Mute Ambient" src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M12.75%203C12.9489%203%2013.1397%203.07902%2013.2803%203.21967C13.421%203.36032%2013.5%203.55109%2013.5%203.75V20.25C13.5%2020.4489%2013.421%2020.6397%2013.2803%2020.7803C13.1397%2020.921%2012.9489%2021%2012.75%2021C12.5511%2021%2012.3603%2020.921%2012.2197%2020.7803C12.079%2020.6397%2012%2020.4489%2012%2020.25V3.75C12%203.55109%2012.079%203.36032%2012.2197%203.21967C12.3603%203.07902%2012.5511%203%2012.75%203ZM9.75%206C9.94891%206%2010.1397%206.07902%2010.2803%206.21967C10.421%206.36032%2010.5%206.55109%2010.5%206.75V17.25C10.5%2017.4489%2010.421%2017.6397%2010.2803%2017.7803C10.1397%2017.921%209.94891%2018%209.75%2018C9.55109%2018%209.36032%2017.921%209.21967%2017.7803C9.07902%2017.6397%209%2017.4489%209%2017.25V6.75C9%206.55109%209.07902%206.36032%209.21967%206.21967C9.36032%206.07902%209.55109%206%209.75%206ZM15.75%206C15.9489%206%2016.1397%206.07902%2016.2803%206.21967C16.421%206.36032%2016.5%206.55109%2016.5%206.75V17.25C16.5%2017.4489%2016.421%2017.6397%2016.2803%2017.7803C16.1397%2017.921%2015.9489%2018%2015.75%2018C15.5511%2018%2015.3603%2017.921%2015.2197%2017.7803C15.079%2017.6397%2015%2017.4489%2015%2017.25V6.75C15%206.55109%2015.079%206.36032%2015.2197%206.21967C15.3603%206.07902%2015.5511%206%2015.75%206ZM6.75%208.25C6.94891%208.25%207.13968%208.32902%207.28033%208.46967C7.42098%208.61032%207.5%208.80109%207.5%209V15C7.5%2015.1989%207.42098%2015.3897%207.28033%2015.5303C7.13968%2015.671%206.94891%2015.75%206.75%2015.75C6.55109%2015.75%206.36032%2015.671%206.21967%2015.5303C6.07902%2015.3897%206%2015.1989%206%2015V9C6%208.80109%206.07902%208.61032%206.21967%208.46967C6.36032%208.32902%206.55109%208.25%206.75%208.25ZM18.75%208.25C18.9489%208.25%2019.1397%208.32902%2019.2803%208.46967C19.421%208.61032%2019.5%208.80109%2019.5%209V15C19.5%2015.1989%2019.421%2015.3897%2019.2803%2015.5303C19.1397%2015.671%2018.9489%2015.75%2018.75%2015.75C18.5511%2015.75%2018.3603%2015.671%2018.2197%2015.5303C18.079%2015.3897%2018%2015.1989%2018%2015V9C18%208.80109%2018.079%208.61032%2018.2197%208.46967C18.3603%208.32902%2018.5511%208.25%2018.75%208.25ZM3.75%209.75C3.94891%209.75%204.13968%209.82902%204.28033%209.96967C4.42098%2010.1103%204.5%2010.3011%204.5%2010.5V13.5C4.5%2013.6989%204.42098%2013.8897%204.28033%2014.0303C4.13968%2014.171%203.94891%2014.25%203.75%2014.25C3.55109%2014.25%203.36032%2014.171%203.21967%2014.0303C3.07902%2013.8897%203%2013.6989%203%2013.5V10.5C3%2010.3011%203.07902%2010.1103%203.21967%209.96967C3.36032%209.82902%203.55109%209.75%203.75%209.75ZM21.75%209.75C21.9489%209.75%2022.1397%209.82902%2022.2803%209.96967C22.421%2010.1103%2022.5%2010.3011%2022.5%2010.5V13.5C22.5%2013.6989%2022.421%2013.8897%2022.2803%2014.0303C22.1397%2014.171%2021.9489%2014.25%2021.75%2014.25C21.5511%2014.25%2021.3603%2014.171%2021.2197%2014.0303C21.079%2013.8897%2021%2013.6989%2021%2013.5V10.5C21%2010.3011%2021.079%2010.1103%2021.2197%209.96967C21.3603%209.82902%2021.5511%209.75%2021.75%209.75Z'%20fill='white'/%3e%3c/svg%3e" title="Mute Ambient"/><span>Unmute</span>
+</div>
+<div class="menuBtnTextHover">
+<img alt="Mute Ambient" src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M12.75%203C12.9489%203%2013.1397%203.07902%2013.2803%203.21967C13.421%203.36032%2013.5%203.55109%2013.5%203.75V20.25C13.5%2020.4489%2013.421%2020.6397%2013.2803%2020.7803C13.1397%2020.921%2012.9489%2021%2012.75%2021C12.5511%2021%2012.3603%2020.921%2012.2197%2020.7803C12.079%2020.6397%2012%2020.4489%2012%2020.25V3.75C12%203.55109%2012.079%203.36032%2012.2197%203.21967C12.3603%203.07902%2012.5511%203%2012.75%203ZM9.75%206C9.94891%206%2010.1397%206.07902%2010.2803%206.21967C10.421%206.36032%2010.5%206.55109%2010.5%206.75V17.25C10.5%2017.4489%2010.421%2017.6397%2010.2803%2017.7803C10.1397%2017.921%209.94891%2018%209.75%2018C9.55109%2018%209.36032%2017.921%209.21967%2017.7803C9.07902%2017.6397%209%2017.4489%209%2017.25V6.75C9%206.55109%209.07902%206.36032%209.21967%206.21967C9.36032%206.07902%209.55109%206%209.75%206ZM15.75%206C15.9489%206%2016.1397%206.07902%2016.2803%206.21967C16.421%206.36032%2016.5%206.55109%2016.5%206.75V17.25C16.5%2017.4489%2016.421%2017.6397%2016.2803%2017.7803C16.1397%2017.921%2015.9489%2018%2015.75%2018C15.5511%2018%2015.3603%2017.921%2015.2197%2017.7803C15.079%2017.6397%2015%2017.4489%2015%2017.25V6.75C15%206.55109%2015.079%206.36032%2015.2197%206.21967C15.3603%206.07902%2015.5511%206%2015.75%206ZM6.75%208.25C6.94891%208.25%207.13968%208.32902%207.28033%208.46967C7.42098%208.61032%207.5%208.80109%207.5%209V15C7.5%2015.1989%207.42098%2015.3897%207.28033%2015.5303C7.13968%2015.671%206.94891%2015.75%206.75%2015.75C6.55109%2015.75%206.36032%2015.671%206.21967%2015.5303C6.07902%2015.3897%206%2015.1989%206%2015V9C6%208.80109%206.07902%208.61032%206.21967%208.46967C6.36032%208.32902%206.55109%208.25%206.75%208.25ZM18.75%208.25C18.9489%208.25%2019.1397%208.32902%2019.2803%208.46967C19.421%208.61032%2019.5%208.80109%2019.5%209V15C19.5%2015.1989%2019.421%2015.3897%2019.2803%2015.5303C19.1397%2015.671%2018.9489%2015.75%2018.75%2015.75C18.5511%2015.75%2018.3603%2015.671%2018.2197%2015.5303C18.079%2015.3897%2018%2015.1989%2018%2015V9C18%208.80109%2018.079%208.61032%2018.2197%208.46967C18.3603%208.32902%2018.5511%208.25%2018.75%208.25ZM3.75%209.75C3.94891%209.75%204.13968%209.82902%204.28033%209.96967C4.42098%2010.1103%204.5%2010.3011%204.5%2010.5V13.5C4.5%2013.6989%204.42098%2013.8897%204.28033%2014.0303C4.13968%2014.171%203.94891%2014.25%203.75%2014.25C3.55109%2014.25%203.36032%2014.171%203.21967%2014.0303C3.07902%2013.8897%203%2013.6989%203%2013.5V10.5C3%2010.3011%203.07902%2010.1103%203.21967%209.96967C3.36032%209.82902%203.55109%209.75%203.75%209.75ZM21.75%209.75C21.9489%209.75%2022.1397%209.82902%2022.2803%209.96967C22.421%2010.1103%2022.5%2010.3011%2022.5%2010.5V13.5C22.5%2013.6989%2022.421%2013.8897%2022.2803%2014.0303C22.1397%2014.171%2021.9489%2014.25%2021.75%2014.25C21.5511%2014.25%2021.3603%2014.171%2021.2197%2014.0303C21.079%2013.8897%2021%2013.6989%2021%2013.5V10.5C21%2010.3011%2021.079%2010.1103%2021.2197%209.96967C21.3603%209.82902%2021.5511%209.75%2021.75%209.75Z'%20fill='white'/%3e%3c/svg%3e" title="Mute Ambient"/><span>Unmute</span>
+</div>
+</div>
+<div class="menuBtn3LB"></div>
+<div class="menuBtn3LL"></div>
+</div>
+</div>
+<div class="menuLogo">
+<img alt="f2" src="images/f2.png" title="Ysr"/>
+</div>
+<div class="menuClockHld">
+<div class="menuClock">
+<span>12:24PM</span>
+</div>
+</div>
+<svg style="display: none" xmlns="http://www.w3.org/2000/svg">
+<filter filterunits="objectBoundingBox" height="100%" id="glass-blur" width="100%" x="0" y="0">
+<feturbulence basefrequency="0.005 0.005" numoctaves="1" result="turbulence" type="fractalNoise"></feturbulence>
+<fedisplacementmap in="SourceGraphic" in2="turbulence" scale="200" xchannelselector="R" ychannelselector="G"></fedisplacementmap>
+</filter>
+</svg>
+<div class="menuLTR">
+<div class="menuLTRFill"></div>
+</div>
+<div class="menuLTL">
+<div class="menuLTLFill"></div>
+</div>
+<div class="menuLSL">
+<div class="menuLSLFill"></div>
+</div>
+<div class="menuLSR">
+<div class="menuLSRFill"></div>
+</div>
+</div>
+<div class="hero">
+<div class="heroSlogan" id="heroSlogan">
+<!-- <img src="images/f2.png" alt="f2" title="Luxurious and TECH"> -->
+</div>
+<div class="heroScroll">
+<div class="heroScrollText">
+<span>scroll down</span>
+</div>
+<div class="heroScrollArrow">
+<div class="heroScrollArrowItem1 heroScrollArrowItem">
+<svg fill="none" viewbox="0 0 127 65" xmlns="http://www.w3.org/2000/svg">
+<path d="M126 1L63.7746 63.2254L1.5492 0.999995" stroke="url(#scrollGrad)" stroke-width="2"></path>
+<defs>
+<lineargradient id="scrollGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="rgba(255, 255, 255, 0)"></stop>
+<stop offset="100%" stop-color="rgba(255, 255, 255, 1)"></stop>
+</lineargradient>
+</defs>
+</svg>
+</div>
+<div class="heroScrollArrowItem2 heroScrollArrowItem">
+<svg fill="none" viewbox="0 0 127 65" xmlns="http://www.w3.org/2000/svg">
+<path d="M126 1L63.7746 63.2254L1.5492 0.999995" stroke="url(#scrollGrad)" stroke-width="2"></path>
+<defs>
+<lineargradient id="scrollGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="rgba(255, 255, 255, 0)"></stop>
+<stop offset="100%" stop-color="rgba(255, 255, 255, 1)"></stop>
+</lineargradient>
+</defs>
+</svg>
+</div>
+<div class="heroScrollArrowItem3 heroScrollArrowItem">
+<svg fill="none" viewbox="0 0 127 65" xmlns="http://www.w3.org/2000/svg">
+<path d="M126 1L63.7746 63.2254L1.5492 0.999995" stroke="url(#scrollGrad)" stroke-width="2"></path>
+<defs>
+<lineargradient id="scrollGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="rgba(255, 255, 255, 0)"></stop>
+<stop offset="100%" stop-color="rgba(255, 255, 255, 1)"></stop>
+</lineargradient>
+</defs>
+</svg>
+</div>
+</div>
+</div>
+</div>
+<svg style="display: none" xmlns="http://www.w3.org/2000/svg">
+<filter filterunits="objectBoundingBox" height="100%" id="glass-blur2" width="100%" x="0" y="0">
+<feturbulence basefrequency="0.007 0.007" numoctaves="1" result="turbulence" type="fractalNoise"></feturbulence>
+<fedisplacementmap in="SourceGraphic" in2="turbulence" scale="100" xchannelselector="R" ychannelselector="G"></fedisplacementmap>
+</filter>
+</svg>
+<div class="fold1"></div>
+<div class="fold2"></div>
+<div class="note1">
+<p>It’s not just about how it looks.<br/>
+      It’s about how it <i>moves</i> and <i>lives</i> in the <i>minds</i> of those who <i>experience</i> it!</p>
+</div>
+<div class="note2">
+<div class="note2Ctr">
+<p>We’re a fresh, international collective of designers and developers — creative minds with a sharp eye for detail and a passion for elegance.
+        <br/>We craft high-end digital experiences for luxury brands that demand more than just a website.
+        <br/>Think bold.<br/>Think refined.<br/>Think unforgettable.</p>
+</div>
+</div>
+<div class="services">
+<div class="servicesItem">
+<div class="servicesItemT1">
+<span>Luxurious</span>
+</div>
+<div class="servicesItemT2">
+<h2>websites</h2>
+</div>
+<div class="servicesItemP">
+<p>Crafted with precision and purpose, our websites are immersive, cinematic, and built to turn heads. Whether it’s a digital portfolio or a full-scale experience — we blend design, code, and emotion.</p>
+</div>
+<div class="servicesItemBtn">
+<div class="servicesItemBtnClick sfxMenu">
+<span>discuss a project</span>
+<b>discuss a project</b>
+</div>
+</div>
+</div>
+<div class="servicesItem">
+<div class="servicesItemT1">
+<span>Eye Catching</span>
+</div>
+<div class="servicesItemT2">
+<h2>Brandings</h2>
+</div>
+<div class="servicesItemP">
+<p>We shape identities that speak volumes — from logo to language. Our branding goes beyond aesthetics; it’s about storytelling, tone, and building a magnetic presence.</p>
+</div>
+<div class="servicesItemBtn">
+<div class="servicesItemBtnClick sfxMenu">
+<span>discuss a project</span>
+<b>discuss a project</b>
+</div>
+</div>
+</div>
+</div>
+<div class="chapter1">
+<div class="chapter1Pop">
+<div class="chapter1PopEdges">
+<div class="chapter1PopEdge1">
+<svg fill="none" viewbox="0 0 127 65" xmlns="http://www.w3.org/2000/svg">
+<path d="M126 1L63.7746 63.2254L1.5492 0.999995" stroke="url(#scrollGrad)" stroke-width="2"></path>
+<defs>
+<lineargradient id="scrollGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="rgba(255, 255, 255, 0)"></stop>
+<stop offset="100%" stop-color="rgba(255, 255, 255, 1)"></stop>
+</lineargradient>
+</defs>
+</svg>
+</div>
+<div class="chapter1PopEdge2">
+<svg fill="none" viewbox="0 0 127 65" xmlns="http://www.w3.org/2000/svg">
+<path d="M126 1L63.7746 63.2254L1.5492 0.999995" stroke="url(#scrollGrad)" stroke-width="2"></path>
+<defs>
+<lineargradient id="scrollGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="rgba(255, 255, 255, 0)"></stop>
+<stop offset="100%" stop-color="rgba(255, 255, 255, 1)"></stop>
+</lineargradient>
+</defs>
+</svg>
+</div>
+<div class="chapter1PopEdge3">
+<svg fill="none" viewbox="0 0 127 65" xmlns="http://www.w3.org/2000/svg">
+<path d="M126 1L63.7746 63.2254L1.5492 0.999995" stroke="url(#scrollGrad)" stroke-width="2"></path>
+<defs>
+<lineargradient id="scrollGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="rgba(255, 255, 255, 0)"></stop>
+<stop offset="100%" stop-color="rgba(255, 255, 255, 1)"></stop>
+</lineargradient>
+</defs>
+</svg>
+</div>
+<div class="chapter1PopEdge4">
+<svg fill="none" viewbox="0 0 127 65" xmlns="http://www.w3.org/2000/svg">
+<path d="M126 1L63.7746 63.2254L1.5492 0.999995" stroke="url(#scrollGrad)" stroke-width="2"></path>
+<defs>
+<lineargradient id="scrollGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="rgba(255, 255, 255, 0)"></stop>
+<stop offset="100%" stop-color="rgba(255, 255, 255, 1)"></stop>
+</lineargradient>
+</defs>
+</svg>
+</div>
+</div>
+<div class="chapter1PopChars">
+<div class="chapter1PopCharsLine1">
+<div class="chapter1PopChar1">
+<img alt="YF" src="data:image/svg+xml,%3csvg%20width='114'%20height='35'%20viewBox='0%200%20114%2035'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20style='mix-blend-mode:difference'%20opacity='0.8'%3e%3cpath%20d='M40.328%200.879997H43.832L33.56%2034H29.912L21.992%205.68L13.4%2034L9.752%2034.048L0.392%200.879997H3.896L11.672%2030.208L20.264%200.879997H23.912L31.784%2030.064L40.328%200.879997ZM113.667%200.879997V3.616H100.179V16H112.227V18.688H100.179V31.312H113.667V34H96.8188V0.879997H113.667Z'%20fill='white'/%3e%3c/g%3e%3c/svg%3e" title="YF"/>
+</div>
+<div class="chapter1PopChar2">
+<img alt="YF" src="data:image/svg+xml,%3csvg%20width='177'%20height='34'%20viewBox='0%200%20177%2034'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20style='mix-blend-mode:difference'%20opacity='0.8'%3e%3cpath%20d='M24.976%2034L22.192%2026.272H6.736L3.904%2034H0.544L12.736%200.879997H16.192L28.336%2034H24.976ZM7.696%2023.584H21.184L14.464%205.056L7.696%2023.584ZM85.8194%2020.128V34H82.4594V0.879997H92.5874C96.2994%200.879997%2099.1154%201.776%20101.035%203.568C102.955%205.328%20103.915%207.568%20103.915%2010.288C103.915%2013.008%20103.163%2015.216%20101.659%2016.912C100.155%2018.576%2097.9154%2019.6%2094.9394%2019.984L104.347%2034H99.9794L91.0034%2020.128H85.8194ZM85.8194%203.616V17.392H92.5874C97.8674%2017.392%20100.507%2015.104%20100.507%2010.528C100.507%205.92%2097.8674%203.616%2092.5874%203.616H85.8194ZM176.229%200.879997V3.616H162.741V16H174.789V18.688H162.741V31.312H176.229V34H159.381V0.879997H176.229Z'%20fill='white'/%3e%3c/g%3e%3c/svg%3e" title="YF"/>
+</div>
+</div>
+<div class="chapter1PopCharsLine2">
+<div class="chapter1PopChar3">
+<img alt="YF" src="data:image/svg+xml,%3csvg%20width='436'%20height='35'%20viewBox='0%200%20436%2035'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20style='mix-blend-mode:difference'%3e%3cpath%20d='M24.584%2034L22.424%2027.712H9.368L7.208%2034H0.0560001L11.912%200.399998H19.928L31.736%2034H24.584ZM11.144%2022.528H20.696L15.896%208.56L11.144%2022.528ZM84.4438%200.495999H91.2118V28.864H101.964V34H84.4438V0.495999ZM192.01%200.495999H199.258L189.562%2034H181.882L175.402%2010.624L168.73%2034H161.05L151.546%200.495999H158.746L165.178%2026.368L171.946%200.495999H179.578L185.962%2026.128L192.01%200.495999ZM273.443%2034L271.283%2027.712H258.227L256.067%2034H248.915L260.771%200.399998H268.787L280.595%2034H273.443ZM260.003%2022.528H269.555L264.755%208.56L260.003%2022.528ZM348.519%2034H341.751V22.48L330.423%200.495999H338.007L345.159%2016.288L352.263%200.495999H359.847L348.519%2022.48V34ZM422.995%205.44C421.651%205.44%20420.547%205.792%20419.683%206.496C418.851%207.168%20418.435%208.112%20418.435%209.328C418.435%2010.544%20418.739%2011.504%20419.347%2012.208C419.987%2012.88%20420.819%2013.408%20421.843%2013.792C422.867%2014.144%20423.987%2014.464%20425.203%2014.752C426.419%2015.04%20427.635%2015.392%20428.851%2015.808C430.067%2016.224%20431.187%2016.736%20432.211%2017.344C433.235%2017.952%20434.051%2018.848%20434.659%2020.032C435.299%2021.184%20435.619%2022.592%20435.619%2024.256C435.619%2027.008%20434.515%2029.376%20432.307%2031.36C430.131%2033.344%20427.219%2034.336%20423.571%2034.336C419.955%2034.336%20417.027%2033.488%20414.787%2031.792C412.547%2030.064%20411.427%2027.648%20411.427%2024.544H418.627C418.883%2027.488%20420.563%2028.96%20423.667%2028.96C425.203%2028.96%20426.419%2028.56%20427.315%2027.76C428.211%2026.96%20428.659%2025.904%20428.659%2024.592C428.659%2023.248%20428.067%2022.192%20426.883%2021.424C425.699%2020.656%20424.259%2020.08%20422.563%2019.696C420.899%2019.312%20419.219%2018.848%20417.523%2018.304C415.827%2017.76%20414.387%2016.816%20413.203%2015.472C412.019%2014.096%20411.427%2012.288%20411.427%2010.048C411.427%207.008%20412.531%204.576%20414.739%202.752C416.947%200.927999%20419.779%200.0159998%20423.235%200.0159998C426.723%200.0159998%20429.523%200.815999%20431.635%202.416C433.747%203.984%20434.899%206.384%20435.091%209.616H427.699C427.571%208.336%20427.091%207.328%20426.259%206.592C425.427%205.824%20424.339%205.44%20422.995%205.44Z'%20fill='white'/%3e%3c/g%3e%3c/svg%3e" title="YF"/>
+</div>
+</div>
+<div class="chapter1PopCharsLine3">
+<div class="chapter1PopChar4">
+<img alt="YF" src="data:image/svg+xml,%3csvg%20width='503'%20height='35'%20viewBox='0%200%20503%2035'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20style='mix-blend-mode:difference'%20opacity='0.8'%3e%3cpath%20d='M17.816%2034.288C13.048%2034.288%209.016%2032.688%205.72%2029.488C2.424%2026.288%200.776%2022.224%200.776%2017.296C0.776%2012.336%202.424%208.256%205.72%205.056C9.016%201.824%2013.048%200.207997%2017.816%200.207997C21.368%200.207997%2024.52%201.088%2027.272%202.848C30.056%204.576%2032.072%207.04%2033.32%2010.24H26.744C24.952%206.88%2021.976%205.2%2017.816%205.2C14.456%205.2%2011.704%206.304%209.56%208.512C7.448%2010.72%206.392%2013.648%206.392%2017.296C6.392%2020.912%207.448%2023.824%209.56%2026.032C11.704%2028.24%2014.456%2029.344%2017.816%2029.344C21.976%2029.344%2024.952%2027.664%2026.744%2024.304H33.32C32.072%2027.504%2030.056%2029.968%2027.272%2031.696C24.52%2033.424%2021.368%2034.288%2017.816%2034.288ZM108.893%200.639997H114.365V34H108.893V19.264H93.197V34H87.725V0.639997H93.197V15.04H108.893V0.639997ZM192.081%2034L189.681%2027.184H175.713L173.313%2034H167.601L179.553%200.591998H185.889L197.841%2034H192.081ZM177.201%2022.912H188.193L182.721%207.216L177.201%2022.912ZM261.406%204.672C259.774%204.672%20258.446%205.088%20257.422%205.92C256.398%206.752%20255.886%207.968%20255.886%209.568C255.886%2011.136%20256.494%2012.336%20257.71%2013.168C258.926%2014%20260.398%2014.608%20262.126%2014.992C263.854%2015.376%20265.582%2015.824%20267.31%2016.336C269.038%2016.816%20270.51%2017.728%20271.726%2019.072C272.942%2020.416%20273.55%2022.32%20273.55%2024.784C273.55%2027.248%20272.51%2029.456%20270.43%2031.408C268.35%2033.36%20265.566%2034.336%20262.078%2034.336C258.59%2034.336%20255.758%2033.52%20253.582%2031.888C251.406%2030.256%20250.318%2028%20250.318%2025.12H256.174C256.302%2026.592%20256.846%2027.76%20257.806%2028.624C258.766%2029.488%20260.174%2029.92%20262.03%2029.92C263.886%2029.92%20265.342%2029.44%20266.398%2028.48C267.486%2027.52%20268.03%2026.384%20268.03%2025.072C268.03%2023.76%20267.694%2022.736%20267.022%2022C266.382%2021.264%20265.534%2020.72%20264.478%2020.368C263.454%2019.984%20262.318%2019.648%20261.07%2019.36C259.822%2019.072%20258.558%2018.736%20257.278%2018.352C256.03%2017.968%20254.878%2017.472%20253.822%2016.864C252.798%2016.256%20251.95%2015.376%20251.278%2014.224C250.638%2013.04%20250.318%2011.6%20250.318%209.904C250.318%206.992%20251.358%204.656%20253.438%202.896C255.55%201.104%20258.27%200.207997%20261.598%200.207997C264.958%200.207997%20267.63%200.975998%20269.614%202.512C271.63%204.048%20272.75%206.272%20272.974%209.184H266.926C266.798%207.904%20266.254%206.832%20265.294%205.968C264.334%205.104%20263.038%204.672%20261.406%204.672ZM328.006%2034V0.639997H333.478V34H328.006ZM410.599%200.591998H416.071V34H410.599L394.135%209.088V34H388.663V0.591998H394.135L410.599%2025.456V0.591998ZM486.136%2034.288C481.592%2034.288%20477.672%2032.688%20474.376%2029.488C471.08%2026.288%20469.432%2022.224%20469.432%2017.296C469.432%2012.336%20471.08%208.256%20474.376%205.056C477.672%201.824%20481.704%200.207997%20486.472%200.207997C490.024%200.207997%20493.176%201.088%20495.928%202.848C498.712%204.576%20500.728%207.04%20501.976%2010.24H495.4C493.608%206.88%20490.632%205.2%20486.472%205.2C483.112%205.2%20480.36%206.304%20478.216%208.512C476.104%2010.72%20475.048%2013.648%20475.048%2017.296C475.048%2020.912%20476.104%2023.824%20478.216%2026.032C480.36%2028.24%20483.016%2029.344%20486.184%2029.344C489.352%2029.344%20491.864%2028.512%20493.72%2026.848C495.608%2025.152%20496.744%2022.864%20497.128%2019.984H484.6V15.712H502.984V19.984C502.472%2023.984%20500.68%2027.376%20497.608%2030.16C494.536%2032.912%20490.712%2034.288%20486.136%2034.288Z'%20fill='white'/%3e%3c/g%3e%3c/svg%3e" title="YF"/>
+</div>
+<div class="chapter1PopChar5">
+<img alt="YF" src="data:image/svg+xml,%3csvg%20width='179'%20height='35'%20viewBox='0%200%20179%2035'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20style='mix-blend-mode:difference'%20opacity='0.8'%3e%3cpath%20d='M0.6%2034V0.879997H18.456V3.616H3.96V16H15.528V18.688H3.96V34H0.6ZM95.7731%2027.616C98.3331%2025.024%2099.6131%2021.632%2099.6131%2017.44C99.6131%2013.248%2098.3491%209.872%2095.8211%207.312C93.2931%204.752%2090.0931%203.472%2086.2211%203.472C82.3491%203.472%2079.1331%204.752%2076.5731%207.312C74.0451%209.872%2072.7811%2013.248%2072.7811%2017.44C72.7811%2021.632%2074.0451%2025.024%2076.5731%2027.616C79.1331%2030.176%2082.3331%2031.456%2086.1731%2031.456C90.0451%2031.456%2093.2451%2030.176%2095.7731%2027.616ZM74.2211%2029.584C70.9891%2026.384%2069.3731%2022.336%2069.3731%2017.44C69.3731%2012.544%2070.9891%208.512%2074.2211%205.344C77.4851%202.144%2081.4851%200.543999%2086.2211%200.543999C90.9891%200.543999%2094.9891%202.144%2098.2211%205.344C101.453%208.512%20103.069%2012.544%20103.069%2017.44C103.069%2022.336%20101.453%2026.384%2098.2211%2029.584C94.9891%2032.752%2090.9891%2034.336%2086.2211%2034.336C81.4851%2034.336%2077.4851%2032.752%2074.2211%2029.584ZM159.913%2020.128V34H156.553V0.879997H166.681C170.393%200.879997%20173.209%201.776%20175.129%203.568C177.049%205.328%20178.009%207.568%20178.009%2010.288C178.009%2013.008%20177.257%2015.216%20175.753%2016.912C174.249%2018.576%20172.009%2019.6%20169.033%2019.984L178.441%2034H174.073L165.097%2020.128H159.913ZM159.913%203.616V17.392H166.681C171.961%2017.392%20174.601%2015.104%20174.601%2010.528C174.601%205.92%20171.961%203.616%20166.681%203.616H159.913Z'%20fill='white'/%3e%3c/g%3e%3c/svg%3e" title="YF"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="scene1">
+<canvas class="scene1can" id="scene1can"></canvas>
+<div class="sceneBro"></div>
+</div>
+<div class="chapter2">
+<div class="chapter2Pop">
+<div class="chapter2PopEdges">
+<div class="chapter2PopEdge1">
+<svg fill="none" viewbox="0 0 127 65" xmlns="http://www.w3.org/2000/svg">
+<path d="M126 1L63.7746 63.2254L1.5492 0.999995" stroke="url(#scrollGrad)" stroke-width="2"></path>
+<defs>
+<lineargradient id="scrollGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="rgba(255, 255, 255, 0)"></stop>
+<stop offset="100%" stop-color="rgba(255, 255, 255, 1)"></stop>
+</lineargradient>
+</defs>
+</svg>
+</div>
+<div class="chapter2PopEdge2">
+<svg fill="none" viewbox="0 0 127 65" xmlns="http://www.w3.org/2000/svg">
+<path d="M126 1L63.7746 63.2254L1.5492 0.999995" stroke="url(#scrollGrad)" stroke-width="2"></path>
+<defs>
+<lineargradient id="scrollGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="rgba(255, 255, 255, 0)"></stop>
+<stop offset="100%" stop-color="rgba(255, 255, 255, 1)"></stop>
+</lineargradient>
+</defs>
+</svg>
+</div>
+<div class="chapter2PopEdge3">
+<svg fill="none" viewbox="0 0 127 65" xmlns="http://www.w3.org/2000/svg">
+<path d="M126 1L63.7746 63.2254L1.5492 0.999995" stroke="url(#scrollGrad)" stroke-width="2"></path>
+<defs>
+<lineargradient id="scrollGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="rgba(255, 255, 255, 0)"></stop>
+<stop offset="100%" stop-color="rgba(255, 255, 255, 1)"></stop>
+</lineargradient>
+</defs>
+</svg>
+</div>
+<div class="chapter2PopEdge4">
+<svg fill="none" viewbox="0 0 127 65" xmlns="http://www.w3.org/2000/svg">
+<path d="M126 1L63.7746 63.2254L1.5492 0.999995" stroke="url(#scrollGrad)" stroke-width="2"></path>
+<defs>
+<lineargradient id="scrollGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="rgba(255, 255, 255, 0)"></stop>
+<stop offset="100%" stop-color="rgba(255, 255, 255, 1)"></stop>
+</lineargradient>
+</defs>
+</svg>
+</div>
+</div>
+<div class="chapter2PopChars">
+<div class="chapter2PopCharsLine1">
+<div class="chapter2PopChar1">
+<img alt="YF" src="data:image/svg+xml,%3csvg%20width='114'%20height='35'%20viewBox='0%200%20114%2035'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20style='mix-blend-mode:difference'%20opacity='0.8'%3e%3cpath%20d='M40.328%200.879997H43.832L33.56%2034H29.912L21.992%205.68L13.4%2034L9.752%2034.048L0.392%200.879997H3.896L11.672%2030.208L20.264%200.879997H23.912L31.784%2030.064L40.328%200.879997ZM113.667%200.879997V3.616H100.179V16H112.227V18.688H100.179V31.312H113.667V34H96.8188V0.879997H113.667Z'%20fill='white'/%3e%3c/g%3e%3c/svg%3e" title="YF"/>
+</div>
+<div class="chapter2PopChar2">
+<img alt="YF" src="data:image/svg+xml,%3csvg%20width='278'%20height='35'%20viewBox='0%200%20278%2035'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20style='mix-blend-mode:difference'%20opacity='0.8'%3e%3cpath%20d='M40.328%200.879997H43.832L33.56%2034H29.912L21.992%205.68L13.4%2034L9.752%2034.048L0.392%200.879997H3.896L11.672%2030.208L20.264%200.879997H23.912L31.784%2030.064L40.328%200.879997ZM120.195%2034L117.411%2026.272H101.955L99.1228%2034H95.7628L107.955%200.879997H111.411L123.555%2034H120.195ZM102.915%2023.584H116.403L109.683%205.056L102.915%2023.584ZM199.614%200.879997H202.974V34H199.614L181.038%206.256V34H177.678V0.879997H181.038L199.614%2028.624V0.879997ZM256.915%203.616V0.879997H277.603V3.616H268.915V34H265.603V3.616H256.915Z'%20fill='white'/%3e%3c/g%3e%3c/svg%3e" title="YF"/>
+</div>
+</div>
+<div class="chapter2PopCharsLine2">
+<div class="chapter2PopChar3">
+<img alt="YF" src="data:image/svg+xml,%3csvg%20width='108'%20height='35'%20viewBox='0%200%20108%2035'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20style='mix-blend-mode:difference'%20opacity='0.8'%3e%3cpath%20d='M0.352%203.616V0.879997H21.04V3.616H12.352V34H9.04V3.616H0.352ZM99.7263%2027.616C102.286%2025.024%20103.566%2021.632%20103.566%2017.44C103.566%2013.248%20102.302%209.872%2099.7743%207.312C97.2463%204.752%2094.0463%203.472%2090.1743%203.472C86.3023%203.472%2083.0863%204.752%2080.5263%207.312C77.9983%209.872%2076.7343%2013.248%2076.7343%2017.44C76.7343%2021.632%2077.9983%2025.024%2080.5263%2027.616C83.0863%2030.176%2086.2863%2031.456%2090.1263%2031.456C93.9983%2031.456%2097.1983%2030.176%2099.7263%2027.616ZM78.1743%2029.584C74.9423%2026.384%2073.3263%2022.336%2073.3263%2017.44C73.3263%2012.544%2074.9423%208.512%2078.1743%205.344C81.4383%202.144%2085.4383%200.543999%2090.1743%200.543999C94.9423%200.543999%2098.9423%202.144%20102.174%205.344C105.406%208.512%20107.022%2012.544%20107.022%2017.44C107.022%2022.336%20105.406%2026.384%20102.174%2029.584C98.9423%2032.752%2094.9423%2034.336%2090.1743%2034.336C85.4383%2034.336%2081.4383%2032.752%2078.1743%2029.584Z'%20fill='white'/%3e%3c/g%3e%3c/svg%3e" title="YF"/>
+</div>
+</div>
+<div class="chapter2PopCharsLine3">
+<div class="chapter2PopChar4">
+<img alt="YF" src="data:image/svg+xml,%3csvg%20width='419'%20height='35'%20viewBox='0%200%20419%2035'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20style='mix-blend-mode:difference'%3e%3cpath%20d='M5.672%2029.44C2.376%2026.208%200.728%2022.112%200.728%2017.152C0.728%2012.192%202.376%208.096%205.672%204.864C9%201.632%2013.064%200.0159998%2017.864%200.0159998C21.512%200.0159998%2024.744%200.943999%2027.56%202.8C30.408%204.656%2032.44%207.264%2033.656%2010.624H25.544C24.04%207.68%2021.48%206.208%2017.864%206.208C14.824%206.208%2012.344%207.216%2010.424%209.232C8.536%2011.216%207.592%2013.872%207.592%2017.2C7.592%2020.496%208.536%2023.152%2010.424%2025.168C12.344%2027.152%2014.824%2028.144%2017.864%2028.144C21.448%2028.144%2024.008%2026.672%2025.544%2023.728H33.656C32.44%2027.088%2030.408%2029.696%2027.56%2031.552C24.744%2033.376%2021.512%2034.288%2017.864%2034.288C13.032%2034.288%208.968%2032.672%205.672%2029.44ZM94.2586%2020.656V34H87.4906V0.495999H99.8266C103.699%200.495999%20106.675%201.472%20108.755%203.424C110.867%205.344%20111.923%207.728%20111.923%2010.576C111.923%2012.688%20111.283%2014.656%20110.003%2016.48C108.723%2018.304%20106.707%2019.552%20103.955%2020.224L112.499%2034H104.483L96.4666%2020.656H94.2586ZM94.2586%205.68V15.472H99.8266C101.523%2015.472%20102.819%2015.04%20103.715%2014.176C104.611%2013.28%20105.059%2012.08%20105.059%2010.576C105.059%209.072%20104.611%207.888%20103.715%207.024C102.819%206.128%20101.523%205.68%2099.8266%205.68H94.2586ZM186.007%200.399998V5.584H173.431V14.368H184.567V19.552H173.431V28.816H186.007V34H166.663V0.399998H186.007ZM262.897%2034L260.737%2027.712H247.681L245.521%2034H238.369L250.225%200.399998H258.241L270.049%2034H262.897ZM249.457%2022.528H259.009L254.209%208.56L249.457%2022.528ZM320.788%205.68V0.495999H345.604V5.68H336.532V34H329.812V5.68H320.788ZM418.132%200.399998V5.584H405.556V14.368H416.692V19.552H405.556V28.816H418.132V34H398.788V0.399998H418.132Z'%20fill='white'/%3e%3c/g%3e%3c/svg%3e" title="YF"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="scene2"><div id="threeText"></div></div>
+<div class="chapter3">
+<div class="chapter3Pop">
+<div class="chapter3PopEdges">
+<div class="chapter3PopEdge1">
+<svg fill="none" viewbox="0 0 127 65" xmlns="http://www.w3.org/2000/svg">
+<path d="M126 1L63.7746 63.2254L1.5492 0.999995" stroke="url(#scrollGrad)" stroke-width="2"></path>
+<defs>
+<lineargradient id="scrollGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="rgba(255, 255, 255, 0)"></stop>
+<stop offset="100%" stop-color="rgba(255, 255, 255, 1)"></stop>
+</lineargradient>
+</defs>
+</svg>
+</div>
+<div class="chapter3PopEdge2">
+<svg fill="none" viewbox="0 0 127 65" xmlns="http://www.w3.org/2000/svg">
+<path d="M126 1L63.7746 63.2254L1.5492 0.999995" stroke="url(#scrollGrad)" stroke-width="2"></path>
+<defs>
+<lineargradient id="scrollGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="rgba(255, 255, 255, 0)"></stop>
+<stop offset="100%" stop-color="rgba(255, 255, 255, 1)"></stop>
+</lineargradient>
+</defs>
+</svg>
+</div>
+<div class="chapter3PopEdge3">
+<svg fill="none" viewbox="0 0 127 65" xmlns="http://www.w3.org/2000/svg">
+<path d="M126 1L63.7746 63.2254L1.5492 0.999995" stroke="url(#scrollGrad)" stroke-width="2"></path>
+<defs>
+<lineargradient id="scrollGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="rgba(255, 255, 255, 0)"></stop>
+<stop offset="100%" stop-color="rgba(255, 255, 255, 1)"></stop>
+</lineargradient>
+</defs>
+</svg>
+</div>
+<div class="chapter3PopEdge4">
+<svg fill="none" viewbox="0 0 127 65" xmlns="http://www.w3.org/2000/svg">
+<path d="M126 1L63.7746 63.2254L1.5492 0.999995" stroke="url(#scrollGrad)" stroke-width="2"></path>
+<defs>
+<lineargradient id="scrollGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="rgba(255, 255, 255, 0)"></stop>
+<stop offset="100%" stop-color="rgba(255, 255, 255, 1)"></stop>
+</lineargradient>
+</defs>
+</svg>
+</div>
+</div>
+<div class="chapter3PopChars">
+<div class="chapter3PopCharsLine1">
+<div class="chapter3PopChar1">
+<img alt="YF" src="data:image/svg+xml,%3csvg%20width='191'%20height='34'%20viewBox='0%200%20191%2034'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20style='mix-blend-mode:difference'%20opacity='0.8'%3e%3cpath%20d='M24.976%2034L22.192%2026.272H6.736L3.904%2034H0.544L12.736%200.879997H16.192L28.336%2034H24.976ZM7.696%2023.584H21.184L14.464%205.056L7.696%2023.584ZM104.395%200.879997H107.755V34H104.395L85.8194%206.256V34H82.4594V0.879997H85.8194L104.395%2028.624V0.879997ZM166.304%2031.408H173.12C177.568%2031.408%20180.944%2030.208%20183.248%2027.808C185.584%2025.376%20186.752%2021.984%20186.752%2017.632C186.752%2013.28%20185.584%209.904%20183.248%207.504C180.944%205.072%20177.568%203.856%20173.12%203.856H166.304V31.408ZM173.12%200.879997C178.464%200.879997%20182.64%202.368%20185.648%205.344C188.688%208.288%20190.208%2012.384%20190.208%2017.632C190.208%2022.88%20188.704%2026.928%20185.696%2029.776C182.688%2032.592%20178.496%2034%20173.12%2034H162.944V0.879997H173.12Z'%20fill='white'/%3e%3c/g%3e%3c/svg%3e" title="YF"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="scene3">
+<canvas class="scene3can" id="scene3can"></canvas>
+<div class="sceneBro"></div>
+</div>
+<div class="works">
+<div class="worksCtr">
+<div class="worksCtrItem">
+<div class="worksCtrItemEdges">
+<div class="worksCtrItemEdge1">
+<svg fill="none" viewbox="0 0 127 65" xmlns="http://www.w3.org/2000/svg">
+<path d="M126 1L63.7746 63.2254L1.5492 0.999995" stroke="url(#scrollGrad)" stroke-width="2"></path>
+<defs>
+<lineargradient id="scrollGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="rgba(255, 255, 255, 0)"></stop>
+<stop offset="100%" stop-color="rgba(255, 255, 255, 1)"></stop>
+</lineargradient>
+</defs>
+</svg>
+</div>
+<div class="worksCtrItemEdge4">
+<svg fill="none" viewbox="0 0 127 65" xmlns="http://www.w3.org/2000/svg">
+<path d="M126 1L63.7746 63.2254L1.5492 0.999995" stroke="url(#scrollGrad)" stroke-width="2"></path>
+<defs>
+<lineargradient id="scrollGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="rgba(255, 255, 255, 0)"></stop>
+<stop offset="100%" stop-color="rgba(255, 255, 255, 1)"></stop>
+</lineargradient>
+</defs>
+</svg>
+</div>
+</div>
+<div class="worksCtrItemPic">
+<div class="worksCtrItemPicHld">
+<img alt="png" loading="lazy" src="images/i1.jpg" title="YF"/>
+</div>
+</div>
+<div class="worksCtrItemL">
+<div class="worksCtrItemLYear">
+<span>2025 - Add-on Project</span>
+</div>
+<div class="worksCtrItemLTexts">
+<div class="worksCtrItemLTitle">
+<h4>porject of</h4>
+</div>
+<div class="worksCtrItemLName">
+<h5>YSR Innovative Add-ons</h5>
+</div>
+</div>
+<div class="worksCtrItemLBtn">
+<div class="worksCtrItemLBtnClick sfxMenu" id="worksClick1">
+<span>Open Project</span>
+<b>Open Project</b>
+</div>
+</div>
+</div>
+</div>
+<div class="worksCtrItem">
+<div class="worksCtrItemEdges">
+<div class="worksCtrItemEdge1">
+<svg fill="none" viewbox="0 0 127 65" xmlns="http://www.w3.org/2000/svg">
+<path d="M126 1L63.7746 63.2254L1.5492 0.999995" stroke="url(#scrollGrad)" stroke-width="2"></path>
+<defs>
+<lineargradient id="scrollGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="rgba(255, 255, 255, 0)"></stop>
+<stop offset="100%" stop-color="rgba(255, 255, 255, 1)"></stop>
+</lineargradient>
+</defs>
+</svg>
+</div>
+<div class="worksCtrItemEdge4">
+<svg fill="none" viewbox="0 0 127 65" xmlns="http://www.w3.org/2000/svg">
+<path d="M126 1L63.7746 63.2254L1.5492 0.999995" stroke="url(#scrollGrad)" stroke-width="2"></path>
+<defs>
+<lineargradient id="scrollGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="rgba(255, 255, 255, 0)"></stop>
+<stop offset="100%" stop-color="rgba(255, 255, 255, 1)"></stop>
+</lineargradient>
+</defs>
+</svg>
+</div>
+</div>
+<div class="worksCtrItemPic">
+<div class="worksCtrItemPicHld">
+<img alt="YF" loading="lazy" src="images/w1.png" title="YF"/>
+</div>
+</div>
+<div class="worksCtrItemL">
+<div class="worksCtrItemLYear">
+<span>2025 -March </span>
+</div>
+<div class="worksCtrItemLTexts">
+<div class="worksCtrItemLTitle">
+<h4>Templete of</h4>
+</div>
+<div class="worksCtrItemLName">
+<h5>Ysr E-site</h5>
+</div>
+</div>
+<div class="worksCtrItemLBtn">
+<div class="worksCtrItemLBtnClick sfxMenu" id="worksClick2">
+<span>Open Project</span>
+<b>Open Project</b>
+</div>
+</div>
+</div>
+</div>
+<div class="worksCtrItem">
+<div class="worksCtrItemEdges">
+<div class="worksCtrItemEdge1">
+<svg fill="none" viewbox="0 0 127 65" xmlns="http://www.w3.org/2000/svg">
+<path d="M126 1L63.7746 63.2254L1.5492 0.999995" stroke="url(#scrollGrad)" stroke-width="2"></path>
+<defs>
+<lineargradient id="scrollGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="rgba(255, 255, 255, 0)"></stop>
+<stop offset="100%" stop-color="rgba(255, 255, 255, 1)"></stop>
+</lineargradient>
+</defs>
+</svg>
+</div>
+<div class="worksCtrItemEdge4">
+<svg fill="none" viewbox="0 0 127 65" xmlns="http://www.w3.org/2000/svg">
+<path d="M126 1L63.7746 63.2254L1.5492 0.999995" stroke="url(#scrollGrad)" stroke-width="2"></path>
+<defs>
+<lineargradient id="scrollGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="rgba(255, 255, 255, 0)"></stop>
+<stop offset="100%" stop-color="rgba(255, 255, 255, 1)"></stop>
+</lineargradient>
+</defs>
+</svg>
+</div>
+</div>
+<div class="worksCtrItemPic">
+<div class="worksCtrItemPicHld">
+<img alt="YF" loading="lazy" src="images/p1.jpg" title="YF"/>
+</div>
+</div>
+<div class="worksCtrItemL">
+<div class="worksCtrItemLYear">
+<span>2024</span>
+</div>
+<div class="worksCtrItemLTexts">
+<div class="worksCtrItemLTitle">
+<h4>Project of</h4>
+</div>
+<div class="worksCtrItemLName">
+<h5>3D Tolls - Plugin</h5>
+</div>
+</div>
+<div class="worksCtrItemLBtn">
+<div class="worksCtrItemLBtnClick sfxMenu" id="worksClick3">
+<span>Open Project</span>
+<b>Open Project</b>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="note3 note1">
+<p>This is where your story begins.<br/>
+      Let’s make it <i>unforgettable</i>.</p>
+</div>
+<div class="contact" id="contact">
+<div class="contactPop">
+<div class="contactPopEdges">
+<div class="contactPopEdge1">
+<svg fill="none" viewbox="0 0 127 65" xmlns="http://www.w3.org/2000/svg">
+<path d="M126 1L63.7746 63.2254L1.5492 0.999995" stroke="url(#scrollGrad)" stroke-width="2"></path>
+<defs>
+<lineargradient id="scrollGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="rgba(255, 255, 255, 0)"></stop>
+<stop offset="100%" stop-color="rgba(255, 255, 255, 1)"></stop>
+</lineargradient>
+</defs>
+</svg>
+</div>
+<div class="contactPopEdge3">
+<svg fill="none" viewbox="0 0 127 65" xmlns="http://www.w3.org/2000/svg">
+<path d="M126 1L63.7746 63.2254L1.5492 0.999995" stroke="url(#scrollGrad)" stroke-width="2"></path>
+<defs>
+<lineargradient id="scrollGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="rgba(255, 255, 255, 0)"></stop>
+<stop offset="100%" stop-color="rgba(255, 255, 255, 1)"></stop>
+</lineargradient>
+</defs>
+</svg>
+</div>
+<div class="contactPopEdge4">
+<svg fill="none" viewbox="0 0 127 65" xmlns="http://www.w3.org/2000/svg">
+<path d="M126 1L63.7746 63.2254L1.5492 0.999995" stroke="url(#scrollGrad)" stroke-width="2"></path>
+<defs>
+<lineargradient id="scrollGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="rgba(255, 255, 255, 0)"></stop>
+<stop offset="100%" stop-color="rgba(255, 255, 255, 1)"></stop>
+</lineargradient>
+</defs>
+</svg>
+</div>
+<div class="contactEdgeP">
+<p>Send us an email to get free consultation on your project.</p>
+</div>
+</div>
+<div class="contactCircles">
+<div class="contactCircle1">
+<div class="contactCircle1Fill"></div>
+</div>
+<div class="contactCircle2"></div>
+<div class="contactCircle3"></div>
+<div class="contactCircle4"></div>
+</div>
+<div class="contactEmail">
+<span>ysr@site.com</span>
+</div>
+<div class="contactBtn">
+<span>click to copy</span>
+</div>
+<div class="contactLineR"></div>
+<div class="contactLineL"></div>
+<div class="contactCircleCopied">
+<span>Email copied!</span>
+</div>
+</div>
+<div class="rights">
+<div class="rightsTypo">
+<img alt="Ysr" src="images/f2.png" title="Ysr"/>
+</div>
+<div class="rightsText">
+<span>© 2025</span>
+<b>All rights reserved.</b>
+</div>
+</div>
+</div>
+<div class="secTitle">
+<div class="secTitle1"></div>
+<div class="secTitle2">
+<span>services</span>
+</div>
+<div class="secTitle3">
+<span>values</span>
+</div>
+<div class="secTitle4">
+<span>works</span>
+</div>
+<div class="secTitle5">
+<span>contact</span>
+</div>
+</div>
+<div class="scrollOverlay"></div>
+<script src="js/spline-viewer.js" type="module"></script>
+<p> ART </p>
+<!-- Flame Arrow -->
+<div class="arrow" id="arrow">
+<div class="flame"></div>
+<div class="shaft"></div>
+<div class="head"></div>
+</div>
+<!-- Flame that follows mouse -->
+<div class="flame" id="flame"></div>
+<div class="flame" id="flame"></div>
+<script>
+  let mouseX = window.innerWidth / 2;
+  let mouseY = window.innerHeight / 2;
+
+  document.addEventListener("mousemove", (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+    spawnFlame(mouseX, mouseY);
+  });
+
+  function spawnFlame(x, y) {
+    // main big flame
+    const big = document.createElement("div");
+    big.className = "particle big";
+    big.style.left = (x - 20) + "px";
+    big.style.top = (y - 20) + "px";
+    document.body.appendChild(big);
+
+    // small sparks
+    for (let i = 0; i < 3; i++) {
+      const particle = document.createElement("div");
+      particle.className = "particle";
+      particle.style.left = (x + (Math.random() * 20 - 10)) + "px";
+      particle.style.top = (y + (Math.random() * 20 - 10)) + "px";
+      document.body.appendChild(particle);
+
+      setTimeout(() => particle.remove(), 600);
+    }
+
+    setTimeout(() => big.remove(), 600);
+  }
+
+  // Fade flame out on scroll
+  window.addEventListener("scroll", () => {
+    document.querySelectorAll(".particle").forEach(p => {
+      p.style.opacity = "0";
+    });
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.150.1/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.150.1/examples/js/loaders/FontLoader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.150.1/examples/js/geometries/TextGeometry.js"></script>
+<script>
+  const container = document.getElementById("threeText");
+
+  const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  container.appendChild(renderer.domElement);
+
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(60, window.innerWidth/window.innerHeight, 0.1, 100);
+  camera.position.z = 15;
+
+  const ambient = new THREE.AmbientLight(0xffffff, 0.05);
+  scene.add(ambient);
+  const pointLight = new THREE.PointLight(0xffaa55, 2, 50);
+  scene.add(pointLight);
+
+  const loader = new THREE.FontLoader();
+  loader.load('https://threejs.org/examples/fonts/helvetiker_bold.typeface.json', (font) => {
+    const geometry = new THREE.TextGeometry('Ys', {
+      font: font,
+      size: 8,
+      height: 2,
+      curveSegments: 12,
+      bevelEnabled: true,
+      bevelThickness: 0.2,
+      bevelSize: 0.1,
+      bevelSegments: 5
+    });
+    const material = new THREE.MeshPhysicalMaterial({
+      color: 0xffffff,
+      metalness: 0.8,
+      roughness: 0.2,
+      clearcoat: 1,
+      transparent: true,
+      opacity: 0.1
+    });
+    const mesh = new THREE.Mesh(geometry, material);
+    mesh.position.set(-6, -3, 0);
+    scene.add(mesh);
+  });
+
+  const mouse = new THREE.Vector2();
+  window.addEventListener("mousemove", (e) => {
+    mouse.x = (e.clientX / window.innerWidth) * 2 - 1;
+    mouse.y = -(e.clientY / window.innerHeight) * 2 + 1;
+    pointLight.position.x = mouse.x * 20;
+    pointLight.position.y = mouse.y * 10;
+    pointLight.position.z = 10;
+  });
+
+  window.addEventListener("resize", () => {
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+  });
+
+  function animate() {
+    requestAnimationFrame(animate);
+    renderer.render(scene, camera);
+  }
+  animate();
+</script>
+</body></html>
